@@ -174,7 +174,7 @@ const _Button = React.forwardRef(function Button<T extends ButtonCustomElementTy
                 {...(rest as Pick<typeof props, keyof typeof rest>)}
                 {...(extraProps as (typeof props)['extraProps'])}
                 {...commonProps}
-                ref={ref as React.Ref<HTMLAnchorElement>}
+                ref={ref}
                 rel={props.target === '_blank' && !rest.rel ? 'noopener noreferrer' : rest.rel}
                 aria-disabled={disabled ?? undefined}
             >
@@ -188,7 +188,7 @@ const _Button = React.forwardRef(function Button<T extends ButtonCustomElementTy
             {...(rest as Pick<typeof props, keyof typeof rest>)}
             {...(extraProps as (typeof props)['extraProps'])}
             {...commonProps}
-            ref={ref as React.Ref<HTMLButtonElement>}
+            ref={ref}
             type={props.type || 'button'}
             disabled={disabled || loading}
             aria-pressed={selected}

@@ -145,13 +145,7 @@ export const Drawer = ({
 
     const role = useRole(context, {role: 'dialog'});
     const {getFloatingProps} = useInteractions([dismiss, role]);
-    /*
-     *  TODO: Remove casting in React 19 (https://github.com/gravity-ui/uikit/issues/2537)
-     */
-    const handleFloatingRef = useForkRef<HTMLDivElement>(
-        refs.setFloating,
-        floatingRef as React.Ref<HTMLDivElement>,
-    );
+    const handleFloatingRef = useForkRef<HTMLDivElement>(refs.setFloating, floatingRef);
 
     const portal =
         isMounted || keepMounted ? (

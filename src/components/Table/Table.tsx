@@ -422,11 +422,7 @@ export class Table<I extends TableDataItem = Record<string, string>> extends Rea
                         return (
                             <th
                                 key={id}
-                                ref={
-                                    this.state.columnHeaderRefs[
-                                        index
-                                    ] as React.Ref<HTMLTableCellElement>
-                                }
+                                ref={this.state.columnHeaderRefs[index]}
                                 style={columnsStyles[index]}
                                 className={b(
                                     'cell',

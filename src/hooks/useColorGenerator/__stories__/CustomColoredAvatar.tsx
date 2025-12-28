@@ -105,7 +105,7 @@ export const CustomColoredAvatar = ({
             {(props, ref) => (
                 <div
                     {...props}
-                    ref={ref as React.LegacyRef<HTMLDivElement>}
+                    ref={ref}
                     style={{
                         display: 'inline-block',
                         cursor: 'pointer',

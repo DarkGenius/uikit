@@ -67,7 +67,7 @@ export const PopupWithTogglerList = ({size, itemsCount}: PopupWithTogglerListPro
             </Button>
             <Popup
                 style={{width: COMPONENT_WIDTH, height: '80vh', overflow: 'auto', borderRadius: 6}}
-                anchorRef={controlWrapRef as React.RefObject<HTMLDivElement>}
+                anchorRef={controlWrapRef}
                 placement={['bottom-start', 'bottom-end', 'top-start', 'top-end']}
                 offset={10}
                 open={open}

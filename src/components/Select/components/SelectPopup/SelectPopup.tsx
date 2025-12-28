@@ -49,7 +49,7 @@ export const SelectPopup = React.forwardRef<HTMLDivElement, SelectPopupProps>(
             <Popup
                 className={b(null, className)}
                 qa={SelectQa.POPUP}
-                anchorRef={ref as React.RefObject<HTMLDivElement>}
+                anchorRef={ref}
                 placement={placement}
                 open={open}
                 onClose={handleClose}

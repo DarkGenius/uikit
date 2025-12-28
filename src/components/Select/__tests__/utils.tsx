@@ -94,7 +94,7 @@ export const renderControl = (args: SelectRenderControlProps) => {
     const {onClear, triggerProps, ref} = args;
     return (
         <div>
-            <button {...triggerProps} ref={ref as React.RefObject<HTMLButtonElement>}></button>
+            <button {...triggerProps} ref={ref}></button>
             <button onClick={onClear}>Clear</button>
         </div>
     );

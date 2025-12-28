@@ -298,7 +298,7 @@ export const WithUserControlAndNativeCustomIcon: Story = {
                         <Flex>
                             <Button
                                 id={id}
-                                ref={ref as React.Ref<HTMLButtonElement>}
+                                ref={ref}
                                 view="action"
                                 onClick={onClick}
                                 disabled={disabled}
@@ -341,7 +341,7 @@ export const WithUserControlAndCustomPlacement: Story = {
                 renderControl={({ref, triggerProps: {onClick, disabled, ...extraProps}}) => {
                     return (
                         <Button
-                            ref={ref as React.Ref<HTMLButtonElement>}
+                            ref={ref}
                             view="action"
                             onClick={onClick}
                             disabled={disabled}

@@ -25,10 +25,7 @@ export function ListContainer<T, P extends {} = {}>({
     ...props
 }: ListContainerProps<T, P>) {
     return (
-        /*
-         * TODO: Remove casting in React 19 (https://github.com/gravity-ui/uikit/issues/2537)
-         */
-        <ListContainerView ref={containerRef as React.Ref<HTMLDivElement>} {...props}>
+        <ListContainerView ref={containerRef} {...props}>
             {list.structure.items.map((item, index) => (
                 <ListItemRecursiveRenderer
                     key={index}

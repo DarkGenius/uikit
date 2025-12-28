@@ -43,7 +43,7 @@ export const Tab = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, TabPr
         return (
             <a
                 {...tabProps}
-                ref={ref as React.Ref<HTMLAnchorElement>}
+                ref={ref}
                 href={props.href}
                 rel={props.target === '_blank' && !props.rel ? 'noopener noreferrer' : props.rel}
             >
@@ -55,7 +55,7 @@ export const Tab = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, TabPr
     return (
         <button
             {...tabProps}
-            ref={ref as React.Ref<HTMLButtonElement>}
+            ref={ref}
             type={props.type || 'button'}
         >
             {content}

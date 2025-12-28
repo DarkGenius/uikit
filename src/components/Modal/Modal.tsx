@@ -180,13 +180,7 @@ function ModalComponent({
         onOpenChange: handleOpenChange,
     });
 
-    const handleFloatingRef = useForkRef<HTMLDivElement>(
-        refs.setFloating,
-        /*
-         *  TODO: Remove casting in React 19 (https://github.com/gravity-ui/uikit/issues/2537)
-         */
-        floatingRef as React.Ref<HTMLDivElement>,
-    );
+    const handleFloatingRef = useForkRef<HTMLDivElement>(refs.setFloating, floatingRef);
 
     const dismiss = useDismiss(context, {
         enabled: !disableOutsideClick || !disableEscapeKeyDown,
