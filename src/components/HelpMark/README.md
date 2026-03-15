@@ -2,6 +2,8 @@
 
 # HelpMark
 
+Interactive help icon that displays contextual information in a popover when hovered or clicked. Useful for providing additional explanations, tips, or documentation without cluttering the main interface.
+
 <!--/GITHUB_BLOCK-->
 
 ```tsx
@@ -60,3 +62,4 @@ LANDING_BLOCK-->
 | :----------- | :----------------------- | :----------------------: | :-----: |
 | iconSize     | Sets icon size           | `"s"` `"m"` `"l"` `"xl"` |  `"m"`  |
 | popoverProps | Override `Popover` props |      `PopoverProps`      |         |
+| children     | Content to display in popover |       `React.ReactNode`      |         |
